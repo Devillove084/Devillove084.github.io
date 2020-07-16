@@ -22,28 +22,38 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":320,"display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Something Else">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="5211. 概率最大的路径题目描述：  给你一个由 n 个节点（下标从 0 开始）组成的无向加权图，该图由一个描述边的列表组成，其中 edges[i] &#x3D; [a, b] 表示连接节点 a 和 b 的一条无向边，且该边遍历成功的概率为 succProb[i] 。 指定两个节点分别作为起点 start 和终点 end ，请你找出从起点到终点成功概率最大的路径，并返回其成功概率。  示例 1：   输入">
+<meta property="og:type" content="article">
+<meta property="og:title" content="196-Leetcode-Week">
+<meta property="og:url" content="http://yoursite.com/2020/07/12/196-Leetcode-Week/index.html">
 <meta property="og:site_name" content="Something Else">
+<meta property="og:description" content="5211. 概率最大的路径题目描述：  给你一个由 n 个节点（下标从 0 开始）组成的无向加权图，该图由一个描述边的列表组成，其中 edges[i] &#x3D; [a, b] 表示连接节点 a 和 b 的一条无向边，且该边遍历成功的概率为 succProb[i] 。 指定两个节点分别作为起点 start 和终点 end ，请你找出从起点到终点成功概率最大的路径，并返回其成功概率。  示例 1：   输入">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/1558_ex1.png">
+<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/q4_edited.jpg">
+<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/q4_e1.jpg">
+<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/q4_e3.jpg">
+<meta property="article:published_time" content="2020-07-12T14:12:15.000Z">
+<meta property="article:modified_time" content="2020-07-12T14:44:12.526Z">
 <meta property="article:author" content="Devillove084">
+<meta property="article:tag" content="leetcode">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/1558_ex1.png">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/07/12/196-Leetcode-Week/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Something Else</title>
+  <title>196-Leetcode-Week | Something Else</title>
   
 
 
@@ -189,9 +199,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -207,10 +218,9 @@
       <meta itemprop="name" content="Something Else">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/12/196-Leetcode-Week/" class="post-title-link" itemprop="url">196-Leetcode-Week</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          196-Leetcode-Week
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -248,7 +258,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="5211-概率最大的路径"><a href="#5211-概率最大的路径" class="headerlink" title="5211. 概率最大的路径"></a>5211. 概率最大的路径</h2><p>题目描述：</p>
+        <h2 id="5211-概率最大的路径"><a href="#5211-概率最大的路径" class="headerlink" title="5211. 概率最大的路径"></a>5211. 概率最大的路径</h2><p>题目描述：</p>
 <blockquote>
 <p>给你一个由 <code>n</code> 个节点（下标从 0 开始）组成的无向加权图，该图由一个描述边的列表组成，其中 <code>edges[i] = [a, b]</code> 表示连接节点 a 和 b 的一条无向边，且该边遍历成功的概率为 <code>succProb[i]</code> 。</p>
 <p>指定两个节点分别作为起点 <code>start</code> 和终点 <code>end</code> ，请你找出从起点到终点成功概率最大的路径，并返回其成功概率。</p>
@@ -300,289 +310,46 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">using</span> ld = <span class="keyword">double</span>;</span><br><span class="line">    <span class="keyword">const</span> ld pi = <span class="number">3.1415926535897932384626</span>;</span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">getMinDistSum</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt;&amp; p)</span> </span>&#123;</span><br><span class="line">        ld x = <span class="number">0</span>, y = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> n = p.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)&#123;</span><br><span class="line">            x += p[i][<span class="number">0</span>];</span><br><span class="line">            y += p[i][<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        x /= n;</span><br><span class="line">        y /= n;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">auto</span> go = [&amp;](ld x, ld y)&#123;</span><br><span class="line">            ld ret = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">                ret += <span class="built_in">sqrt</span>((x-p[i][<span class="number">0</span>])*(x-p[i][<span class="number">0</span>])+(y-p[i][<span class="number">1</span>])*(y-p[i][<span class="number">1</span>]));</span><br><span class="line">            <span class="keyword">return</span> ret;</span><br><span class="line">        &#125;;</span><br><span class="line">        </span><br><span class="line">        ld T = <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">const</span> ld eps = <span class="number">1e-8</span>;</span><br><span class="line">        <span class="keyword">while</span> (T &gt; eps)&#123;</span><br><span class="line">            T *= <span class="number">0.99</span>;</span><br><span class="line">            ld rd = (rand()%<span class="number">10000</span>+<span class="number">1</span>)/<span class="number">10000.0</span>;</span><br><span class="line">            ld a = <span class="number">2</span>*pi*rd;</span><br><span class="line">            ld tx = x+T*<span class="built_in">cos</span>(a), ty = y+T*<span class="built_in">sin</span>(a);</span><br><span class="line">            <span class="keyword">auto</span> d = go(tx, ty)-go(x, y);</span><br><span class="line">            <span class="keyword">if</span> (d &lt; <span class="number">0</span>)&#123;</span><br><span class="line">                x = tx, y = ty;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> go(x, y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/09/Huawei-Graph-Mining-Challenge/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Devillove084">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Something Else">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/09/Huawei-Graph-Mining-Challenge/" class="post-title-link" itemprop="url">Huawei Graph Mining Challenge</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-09 19:33:44" itemprop="dateCreated datePublished" datetime="2020-07-09T19:33:44+08:00">2020-07-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-13 17:11:27" itemprop="dateModified" datetime="2020-07-13T17:11:27+08:00">2020-07-13</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/2020/07/09/Huawei-Graph-Mining-Challenge/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/09/Huawei-Graph-Mining-Challenge/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="数据挖掘-图挖掘"><a href="#数据挖掘-图挖掘" class="headerlink" title="数据挖掘(图挖掘)"></a>数据挖掘(图挖掘)</h2><blockquote>
-<p>图挖掘（Graph Mining）是指利用图模型从海量数据中发现和提起有用知识和信息的过程。通过图挖掘所获取的知识和信息已广泛应用于各种领域，如商务管理、市场分析、生产控制、科学探索和工程设计。</p>
-</blockquote>
-<p>上面一段话是摘抄于某博客的一段简短介绍，从本人的角度理解，所谓的图挖掘，就是从原本有结构或者没有结构的，有联系的或者无联系的数据中获取结构和联系的一种数据挖掘方法，不过使用的是图论的概念和相关算法。</p>
-<blockquote>
-<p>图论+新颖算法+数据</p>
-</blockquote>
-<p>主流算法介绍：</p>
-<ul>
-<li>基于先验：<ul>
-<li>AGM/AcGM</li>
-<li>FSG</li>
-<li>PATH</li>
-<li>FFSM</li>
-<li>FTOSM</li>
-</ul>
-</li>
-<li>模式增长：<ul>
-<li>Subdue</li>
-<li>MoFa</li>
-<li>gSpan</li>
-<li>Gaston</li>
-<li>CMTreeMiner</li>
-</ul>
-</li>
-</ul>
-<p>上述算法这里就不进行展开了，有兴趣的读者可以去自己google一下，在笔者看来，这些算法都有一个共有的问题，就是有太多的模式而并没有得到很好的知识分布，再有就是现有的众多模式会让人在使用的时候并不知道如何很好区分在聚类、分类、索引等等具体场景时使用哪一种。</p>
-<p>华为这次和ICPC合作出了一个图挖掘的方向的题目，题目是这样描述的：</p>
-<p>Given an undirected graph $G=(V,E)$ , where $V$ is the set of graph nodes, and $E$ is the set of graph edges. <strong><em>Non-overlapping community detection</em></strong> for the graph $G=(V, E)$ is the task of the partitioning of the set $V$ of all graph nodes into n≥1n≥1 mutually disjoint non-empty sets called communities,<br>$$<br>C_1,C_2,…,C_n \subseteq V,<br>$$<br>whose union is $V$ . In other words,</p>
-<ol>
-<li>all communities must be non-empty: $C_k \not=\emptyset (1\leq k \geq n)$ ;</li>
-<li></li>
-</ol>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/09/Huawei-Graph-Mining-Challenge/" rel="prev" title="Huawei Graph Mining Challenge">
+      <i class="fa fa-chevron-left"></i> Huawei Graph Mining Challenge
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/06/C++%E7%AB%9E%E8%B5%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Devillove084">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Something Else">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/06/C++%E7%AB%9E%E8%B5%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">C++竞赛常用方法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-06 21:43:59" itemprop="dateCreated datePublished" datetime="2020-07-06T21:43:59+08:00">2020-07-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-08 13:06:23" itemprop="dateModified" datetime="2020-07-08T13:06:23+08:00">2020-07-08</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/2020/07/06/C++%E7%AB%9E%E8%B5%9B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/06/C++竞赛常用方法/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="C-竞赛指导——编程技巧"><a href="#C-竞赛指导——编程技巧" class="headerlink" title="C++ 竞赛指导——编程技巧"></a>C++ 竞赛指导——编程技巧</h1><blockquote>
-<p><em>This is not a rulebook. You can integrate parts of it into your coding style. Don’t overthink it, especially during a contest!</em></p>
-</blockquote>
-<h2 id="编译器设置"><a href="#编译器设置" class="headerlink" title="编译器设置"></a>编译器设置</h2><p>确保你是使用的较新(C++17)的GCC编译器标准，<code>-Wall -Wextra -Wshadow</code> 可以作为常用的编译器选项。先解释一下这三个编译器选项的含义，<code>w</code> 是warning的含义，三个编译选项实际上可以将大部分的编译器的告警信息打印出来。上述选项也可以类比于<code>-fsanitize=undefined</code> ，可以帮助你评估程序的错误，举个例子，比如在运行时发现数组的越界错误。</p>
-<p>本人的编译选项(仅供参考): <code>-Wall -Wextra -pedantic -std=c++2a -O2 -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align  -lmcheck -ftrapv -fno-sanitize-recover -fstack-protector -fno-sanitize-recover</code> </p>
-<h2 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h2><blockquote>
-<p><em>Using snake_case is fine, but be consistent!</em></p>
-</blockquote>
-<p>这一部分主要还是看个人的习惯，无论是<code>snake_case</code> 还是<code>CamelCase</code> 都是可以的。</p>
-<ul>
-<li>类名使用大写的<code>CamelCase</code> ：<code>Point</code>或者<code>SegTree</code> ;</li>
-<li>函数、方法或者变量使用小写的<code>CamelCase</code> ：<code>someMethod</code> 、<code>someVar</code> ;</li>
-<li>宏和常量使用全大写、单词之间使用<code>_</code> 分开：<code>SOME_MACRO</code> ，<code>MAX_N</code> ，<code>MOD</code>;</li>
-<li>使用有意义的命名，不要使用拼音或者无意义的命名。</li>
-</ul>
-<p>Example:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LOCAL</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> PI = <span class="number">3.14</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">MyPoint</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> x, y;</span><br><span class="line">    <span class="keyword">bool</span> someProperty;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">someMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> someProperty ? x : y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>在信息学竞赛中，经常不会使用大段的注释，比赛中速度非常重要。如果一定要写注释，使用<code>//</code> 代替<code>/*...*/</code> ，避免使用大段注释。</p>
-<p>Example:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* commenting out a block of code - no problem!</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">// some comment about the function below...</span></span><br><span class="line"><span class="comment">void someFunction() &#123;</span></span><br><span class="line"><span class="comment">    // do something</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul>
-<li>在ICPC或者Codeforces这种比赛中，提交代码经常是以粘贴代码或者提交源码文件的形式，所以更推荐使用空格而不是<code>tab</code> 。当然，本人更推荐使用编辑器设置<code>tab</code> 用四个空格代替，这样可以避免圣战的发生;</li>
-<li>大括号始终在同一行上打开，在新行上关闭;</li>
-<li>即使当前行只有一行，最好也还是使用大括号括上;</li>
-<li><code>else</code> 语句应当紧跟当前<code>if</code> 的结尾，而不是另起一行;</li>
-<li>尽量不要让一行超过80列(其实别太长就行);</li>
-<li>在函数前后最好是可以留一个空格，有利于管理代码;</li>
-<li>在括号后面最好不要留有空格，不利于管理代码;</li>
-<li>二元运算符两边最好留有空格，有利于管理代码;</li>
-<li>一元运算符只在左边留有空格，有利于管理代码;</li>
-<li>嵌套括号与外部隔开即可;</li>
-<li>分号和逗号只能从右侧隔开;</li>
-<li>每行最后最好不要有多余的空格;</li>
-<li>控制流语句后面最好加上一个空格，类似<code>if (flag)</code> ;</li>
-<li>函数调用最好不包含空格;</li>
-<li>头文件导入和宏定义在关键字后面应该有一个空格;</li>
-<li>模板关键词和泛型定义之间有一个空格，并且要另起一行;</li>
-<li><code>::</code> 运算符两边不可有空格;</li>
-<li>指针和引用都是类型的一部分！最好使用<code>int* p</code> 和<code>const string&amp; str</code> 这种形式;</li>
-<li>Lambda表达式最好按照固定形式书写，大多数时候可以省略返回类型。 如果它具有多于一行的代码，则可以像函数一样随意扩展主体;</li>
-<li>当使用重载运算符时，命名中不可有空格，形如<code>bool operator!();</code> ;</li>
-<li>在使用省略号<code>...</code> 作变长参数时，只能与左侧隔开。</li>
-</ul>
-<p>Example：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> DIFF = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Point</span> &#123;</span></span><br><span class="line">    T x, y;</span><br><span class="line">    </span><br><span class="line">    Point(T _x, T _y) : x(_x), y(_y) &#123;&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">friend</span> ostream&amp; <span class="keyword">operator</span>&lt;&lt;(ostream&amp; os, <span class="keyword">const</span> Point&amp; p) &#123;</span><br><span class="line">        <span class="keyword">return</span> os &lt;&lt; <span class="string">"("</span> &lt;&lt; p.x &lt;&lt; <span class="string">", "</span> &lt;&lt; p.y &lt;&lt; <span class="string">")"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    <span class="built_in">cin</span>.tie(<span class="literal">nullptr</span>);</span><br><span class="line">    <span class="built_in">vector</span>&lt;Point&lt;<span class="keyword">int</span>&gt;&gt; v;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; ++i) &#123;</span><br><span class="line">        v.push_back(&#123;i, i + DIFF&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> p : v) &#123;</span><br><span class="line">        <span class="keyword">if</span> (p.x + DIFF == p.y) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; p &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">"huh!?\n"</span>; <span class="comment">// will never get printed!</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Output</span><br><span class="line">(<span class="number">0</span>, <span class="number">10</span>)</span><br><span class="line">(<span class="number">1</span>, <span class="number">11</span>)</span><br><span class="line">(<span class="number">2</span>, <span class="number">12</span>)</span><br><span class="line">(<span class="number">3</span>, <span class="number">13</span>)</span><br><span class="line">(<span class="number">4</span>, <span class="number">14</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="竞赛编码推荐用法"><a href="#竞赛编码推荐用法" class="headerlink" title="竞赛编码推荐用法"></a>竞赛编码推荐用法</h3><ul>
-<li>使用<code>#include &lt;bits/stdc++.h&gt;</code> 代替编写多行导入，在正式项目中需要反过来使用;</li>
-<li>使用<code>using namespace std;</code> 替代到处编写<code>std::</code> ，而在项目中需要需要反过来使用;</li>
-<li>使用<code>using</code> 替代<code>typedef</code> ，好看，逼格高，现代C++!!!</li>
-<li>使用<code>struct</code> 关键字代替<code>class</code> ，默认是public，不需要再去手动开启权限;</li>
-<li>不要使用过多的宏定义，但是也不要害怕使用宏定义;</li>
-<li>大部分场景下可以使用<code>const</code> 关键字替代宏定义，因为编译时可以进行评估优化;</li>
-<li>为避免错误，可以在每种switch语句的情况下使用大括号;</li>
-<li>使用<code>auto</code> 关键字增加程序可读性，减少代码数量;</li>
-<li>使用大括号的初始化列表！！！</li>
-<li>处理<code>pair</code> 对和<code>tunple</code> 时，将<code>emplace</code> 和<code>emplace_back</code> 用于容器的操作;</li>
-<li><code>Don&#39;t repeat yourself！！</code>  使用lambda表达式在代码中替代多余的复制粘贴;</li>
-<li>使用<code>nullptr</code> 替代<code>NULL</code> 和 <code>0</code> ;</li>
-<li>使用<code>ios::sync_with_stdio(false);</code> 和<code>cin.tie(nullptr);</code> 可以有个更快的标准IO;</li>
-<li>使用内建函数<code>__builtin</code> ;</li>
-<li>GCD和LCM在17的标准里内置了<code>gcd</code> 和<code>lcm</code> ;</li>
-<li>使用11的标准<code>for (auto&amp; elem : vec)</code> ;</li>
-<li>使用17的标准<code>for (auto&amp; [key, val] : dic)</code> 和<code>auto [x, y] = myPoint;</code> ;</li>
-<li>使用17的标准<code>pair p{1, 2.5};</code> 替代<code>pair&lt;int, double&gt; p{1, 2.5};</code> ;</li>
-<li>如果您有很多嵌套的循环和条件，请重构！ 可能应该使用函数;</li>
-<li>请忘记goto！！！</li>
-<li>尝试分割更小的函数！！！</li>
-<li>不要重复造轮子！！！</li>
-<li>不要自作聪明！！！</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -629,6 +396,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#5211-概率最大的路径"><span class="nav-number">1.</span> <span class="nav-text">5211. 概率最大的路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5463-服务中心的最佳位置"><span class="nav-number">2.</span> <span class="nav-text">5463. 服务中心的最佳位置</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -757,6 +525,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2020/07/12/196-Leetcode-Week/";
+    this.page.identifier = "2020/07/12/196-Leetcode-Week/";
+    this.page.title = "196-Leetcode-Week";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://devillove084-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>
